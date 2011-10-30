@@ -1,0 +1,29 @@
+Prerequisites:
+--------------
+
+1. Install brew
+
+2. Install brew packages:
+
+  for i in gmp mpfr libmpc libiconv deja-gnu libusb-compat libelf
+  do
+    brew install $i
+  done
+
+3. Install Xcode
+
+Build:
+------
+
+1. sh build.sh
+
+Pack:
+-----
+
+1. PackageMaker package/*.pmdoc, review as necessary. Go to
+PackageRoot -> Configuration -> Install, add a dummy letter
+then delete it to force tree reload. Bump version if
+necessary.
+
+2. Click build package
+

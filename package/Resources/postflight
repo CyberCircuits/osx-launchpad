@@ -1,0 +1,14 @@
+#!/bin/sh
+# Parameters passed:
+# $1: full path to the installation package (xxx.pkg)
+# $2: full path to destination (/)
+# $3: mountpoint of destination volume (/)
+# $4: root directory for current system folder (/)
+
+# Uninstall previous null driver
+if [ -d /System/Library/Extensions/ez430rf2500.kext ]
+then
+  rm -rf /System/Library/Extensions/ez430rf2500.kext
+fi
+
+exit 0
